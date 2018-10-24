@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import CharacterReducer from './reducer-character';
 import SelectedCharacterReducer from './reducer-selected-character';
+import CharacterlistReducer from './reducer-characterList';
 
 const allReducers = combineReducers({
-    characters: CharacterReducer,
+    characters: CharacterlistReducer,
     selectedCharacter: SelectedCharacterReducer,
 });
 
